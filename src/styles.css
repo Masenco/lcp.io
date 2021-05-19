@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    background-color: #111;
+    font-family: 'Roboto',
+        sans-serif;
+    overflow: hidden;
+}
+
+.banner-slider {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    width: 200%;
+    height: 100%;
+    animation: bannerSlider 10s infinite alternate;
+}
+
+@keyframes bannerSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+.banner-slider li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-slider li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.info-banner {
+    position: relative;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    margin-top: 13em;
+}
+
+.info-banner h1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 2.4em;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1.5em;
+}
+
+.info-banner h1::before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 140px;
+    height: 4px;
+    background-color: #0079D4;
+}
+
+.info-banner h4 {
+    position: relative;
+    width: 70%;
+    height: auto;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    font-weight: 400;
+    color: #fff;
+    font-style: italic;
+}
+
+.links-banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.links-banner a {
+    position: relative;
+    width: 190px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 3px;
+}
+
+.info-banner .servicios {
+    background-color: #0079D4;
+    border: 2px solid #0079D4;
+    margin-right: 5px;
+}
+
+.servicios:hover {
+    border: 2px solid #0079D4;
+    background-color: transparent;
+    transition-duration: .3s;
+}
+
+.info-banner .presupuesto {
+    background-color: transparent;
+    border: 2px solid #fff;
+
+}
+
+.presupuesto:hover {
+    background-color: #fff;
+    color: #111;
+    transition-duration: .3s;
+}
+
+.navegation {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.navegation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    height: auto;
+    justify-content: center;
+    margin: 15px;
+    color: #fff;
+    font-size: 3em;
+}
+
+.links-right {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    height: auto;
+    margin: 15px;
+}
+
+.links-right li a {
+    margin-left: 25px;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+
+
+
+/*---------------------------------
+ ----------- Responsive -----------
+ ----------------------------------*/
+@media screen and (max-width: 760px) {
+    .info-banner {
+        margin-left: 3em;
+        margin-top: 12em;
+    }
+
+    .info-banner h1 {
+        font-size: 2.1em;
+        margin-bottom: 1.5em;
+    }
+
+    .info-banner h1::before {
+        width: 100px;
+    }
+
+    .info-banner h4 {
+        font-size: 1.1em;
+        margin-bottom: 2em;
+    }
+
+    .links-banner {
+        flex-direction: column;
+    }
+
+    .links-banner a {
+        width: 160px;
+        height: 45px;
+        font-size: 1em;
+    }
+
+    .info-banner .servicios {
+        background-color: #0079D4;
+        border: 2px solid #0079D4;
+        margin-bottom: 10px;
+    }
+
+    .servicios:hover {
+        border: 2px solid #0079D4;
+        background-color: transparent;
+        transition-duration: .3s;
+    }
+
+    .info-banner .presupuesto {
+        background-color: transparent;
+        border: 2px solid #fff;
+
+    }
+
+    .presupuesto:hover {
+        background-color: #fff;
+        color: #111;
+        transition-duration: .3s;
+    }
+
+    .navegation {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        width: 100%;
+        height: 70px;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    .navegation::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(20px);
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+        height: auto;
+        justify-content: center;
+        margin: 15px;
+        color: #fff;
+        font-size: 3em;
+    }
+
+    .links-right {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        height: auto;
+        margin: 15px;
+    }
+
+    .links-right li a {
+        margin-left: 25px;
+        color: #fff;
+        font-size: 1em;
+    }
+}
