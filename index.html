@@ -14,27 +14,19 @@
 <body>
     <div class="banner">
             <ul class="banner-slider">
-                <li><img src="src/images/bannerImgD.jpg" alt=""></li>
+                <li><img src="src/images/bannerImgP.jpg" alt=""></li>
                 <li><img src="src/images/bannerImgM.jpg" alt=""></li>
             </ul>
-
-
-
         <div class="navegation">
-
             <a class="logo">LCP</a>
-
                 <ul class="links-right">
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Construcción en seco</a></li>
                     <li><a href="">Placas antihumedad</a></li>
                     <li><a href="">Muebles</a></li>
                 </ul>
-
                 <a onclick="openMenu();" class="toggle"><i class="fas fa-bars"></i></a>
         </div>
-
-
         <div class="info-banner"> 
             <h1>Somos líderes en la construcción en seco y placas antihumedad</h1>
             <h4>Llevá la decoración de tu hogar al siguiente nivel</h4>
@@ -45,5 +37,47 @@
             
         </div>
     </div>
+
+    <section class="content Seco">
+        <img src="src/images/bannerImgD.jpg" alt="">
+        <div class="infoSections">
+            <h3>Construcciones de calidad</h3>
+            <p>Tenemos lo último en herramientas para brindar el mejor servicio y comodidad a nuestros clientes.</p>
+            <a href="">Ver galería</a>
+        </div>
+    </section>
+
+    <section class="content Placas">
+        <img src="src/images/contentP.jpg" alt="">
+        <div class="infoSections">
+            <h3>Placas antihumedad</h3>
+            <p>Decorá y protegé tu hogar de la húmedad</p>
+            <a href="">Ver galería</a>
+        </div>
+    </section>
+
+    <section class="content Muebles">
+        <img src="src/images/contentM.jpg" alt="">
+        <div class="infoSections">
+            <h3>Muebles a medida</h3>
+            <p></p>
+            <a href="">Ver galería</a>
+        </div>
+    </section>
+
+<footer>
+
+</footer>
+
+<!--------------- Scripts ----------------
+   ------------------------------------------->
+
+<script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector(
+                '.navegation');
+            nav.classList.toggle("scroll", window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
