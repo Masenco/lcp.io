@@ -468,6 +468,7 @@ section img[data-scroll="out"] {
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -558,6 +559,7 @@ section img[data-scroll="out"] {
 footer {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     width: 100%;
