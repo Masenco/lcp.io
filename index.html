@@ -9,9 +9,11 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="src/styles.css">
     <script src="src/scripts/generalFunctions.js"></script>
-    <title>LCP - Construcción en seco, placas antihumedad, muebles a medida</title>
+    <title>LCP S.A - Construcción en seco, placas antihumedad, muebles a medida</title>
 </head>
 <body>
     <div class="banner">
@@ -20,12 +22,12 @@
                 <li><img src="src/images/bannerImgP.jpg" alt=""></li>
             </ul>
         <div class="navegation">
-            <a class="logo">LCP</a>
+            <a class="logo">LCP<span>S.A</span></a>
                 <ul class="links-right">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Construcción en seco</a></li>
-                    <li><a href="">Placas antihumedad</a></li>
-                    <li><a href="">Muebles</a></li>
+                    <li><a href="#top">Inicio</a></li>
+                    <li><a href="#cSeco">Construcción en seco</a></li>
+                    <li><a href="#placas">Placas antihumedad</a></li>
+                    <li><a href="#muebles">Muebles</a></li>
                 </ul>
                 <a onclick="openMenu();" class="toggle"><i class="fas fa-bars"></i></a>
         </div>
@@ -40,7 +42,7 @@
         </div>
     </div>
 
-    <section class="content Seco">
+    <section class="content Seco" id="cSeco">
         <img src="src/images/bannerImgD.jpg" alt="">
         <div class="infoSections">
             <h3>Construcciones de calidad</h3>
@@ -49,26 +51,53 @@
         </div>
     </section>
 
-    <section class="content Placas">
+    <section class="content Placas" id="placas">
         <img src="src/images/contentP.jpg" alt="">
         <div class="infoSections">
             <h3>Placas antihumedad</h3>
-            <p>Decorá y protegé tu hogar de la húmedad</p>
+            <p>Decorá y protegé tu hogar de la húmedad, el salitre y el hongo negro.</p>
             <a href="">Ver galería</a>
         </div>
     </section>
 
-    <section class="content Muebles">
+    <section class="content Muebles" id="muebles">
         <img src="src/images/contentM.jpg" alt="">
         <div class="infoSections">
             <h3>Muebles a medida</h3>
-            <p></p>
+            <p>Calidad y responsabilidad para tus projectos.</p>
             <a href="">Ver galería</a>
         </div>
     </section>
 
-<footer>
+    <div class="marcas">
+        <div class="infoMarcas">
+            <h4>Trabajamos las mejores marcas</h4>
+        </div>
+        <div class="sliderMarcas">
+            <div class="logosMarcas"><img src="src/images/durlock.png" alt="Durlock"></div>
+            <div class="logosMarcas"><img src="src/images/knauf.png" alt="Knauf"></div>
+            <div class="logosMarcas"><img src="src/images/selenita.png" alt="Selenita"></div>
+            <div class="logosMarcas"><img src="src/images/greenway.png" alt="Greenway"></div>
+            <div class="logosMarcas"><img src="src/images/faplac.png" alt="Faplac"></div>
+            <div class="logosMarcas"><img src="src/images/anclaflex.png" alt="Anclaflex"></div>
+        </div>
+        <div class="infoMarcasF">
+            <p>...y muchas más</p>
+        </div>
+    </div>
 
+<footer>
+<div class="linksRedes">
+    <p>Seguínos en nuestras redes</p>
+    <ul class="footerRedes">
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+    </ul>
+</div>
+<div class="contact">
+    <p>Contacto</p>
+</div>
 </footer>
 
 <!--------------- Scripts ----------------

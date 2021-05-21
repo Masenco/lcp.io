@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 
 html {
@@ -10,6 +11,7 @@ html {
 
 section {
     background-color: #222;
+    overflow: hidden;
 }
 
 a {
@@ -81,7 +83,7 @@ li {
 
 .info-banner {
     position: relative;
-    width: 60%;
+    width: 55%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -93,7 +95,7 @@ li {
     position: relative;
     width: 100%;
     height: auto;
-    font-size: 2.4em;
+    font-size: 2.5em;
     font-weight: 400;
     color: #fff;
     margin-bottom: 1.5em;
@@ -178,7 +180,7 @@ li {
     transition: .4s;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px);
     font-family: 'Roboto',
         sans-serif;
@@ -190,6 +192,7 @@ li {
 
 .navegation.scroll {
     height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navegation.scroll:hover {
@@ -254,6 +257,16 @@ li {
 
 .logo:hover {
     cursor: pointer;
+}
+
+.logo span {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 0.4em;
+    margin-bottom: 4.3px;
+    margin-left: -5px;
+    color: #0079D4;
 }
 
 .links-right {
@@ -332,15 +345,15 @@ li {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 70px;
-    height: 4px;
+    width: 50px;
+    height: 3px;
     background-color: #0079D4;
 }
 
 .infoSections p {
     display: flex;
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-style: italic;
     color: #fff;
     margin-bottom: 2em;
@@ -366,23 +379,18 @@ li {
     transition-duration: .3s;
 }
 
-footer {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background-color: #111;
-}
-
 /*-------------------------------------------- 
 -------------- Scroll Animations -------------
 ----------------------------------------------*/
 .info-banner h1[data-scroll="in"] {
     opacity: 1;
     transition-duration: 1s;
+    transform: scale(1);
 }
 
 .info-banner h1[data-scroll="out"] {
     opacity: 0;
+    transform: scale(0);
 }
 
 section img[data-scroll="in"] {
@@ -416,8 +424,222 @@ section img[data-scroll="out"] {
     transform: translateX(20%);
 }
 
+.marcas {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 440px;
+    background-color: #20232D;
+}
 
+.infoMarcas {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
 
+.infoMarcas h4 {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 2em;
+}
+
+.infoMarcas h4::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -10px;
+    background-color: #0079D4;
+}
+
+.sliderMarcas {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+    margin-top: 2em;
+}
+
+.logosMarcas {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 180px;
+    height: 100px;
+    margin: 10px;
+}
+
+.logosMarcas img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 37px;
+    object-fit: cover;
+}
+
+.logosMarcas:nth-child(2) {
+    margin: -20px;
+}
+
+.logosMarcas:nth-child(3) {
+    margin: -20px;
+}
+
+.logosMarcas:nth-child(4) {
+    margin: 15px;
+}
+
+.logosMarcas:nth-child(5) {
+    margin: -5px;
+}
+
+.logosMarcas:nth-child(6) {
+    margin: 36px;
+}
+
+.logosMarcas:nth-child(2) {
+    margin: -20px;
+}
+
+.logosMarcas:nth-child(2) img {
+    height: 48px;
+}
+
+.logosMarcas:nth-child(3) img {
+    height: 60px;
+}
+
+.logosMarcas:nth-child(4) img {
+    height: 45px;
+}
+
+.logosMarcas:nth-child(5) img {
+    height: 30px;
+}
+
+.logosMarcas:nth-child(6) img {
+    height: 47px;
+}
+
+.infoMarcasF {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.infoMarcasF p {
+    font-size: 1.2em;
+    color: #fff;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-style: italic;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 260px;
+    background-color: #111;
+}
+
+.linksRedes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    height: 100px;
+    margin-top: -1em;
+}
+
+.linksRedes p {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: 1em;
+}
+
+.footerRedes {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.footerRedes li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    margin: 10px;
+    border-radius: 50px;
+    padding: 0;
+}
+
+.footerRedes li i {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.footerRedes li i:hover {
+    font-size: 1.5em;
+    color: #0079D4;
+}
+
+.footerRedes li:nth-child(1) {
+    font-size: 0.9em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    height: 100px;
+    margin-top: -1em;
+}
+
+.contact p {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: 1em;
+}
 
 /*-------------------------------------------
  ---------------- Responsive ----------------
