@@ -166,24 +166,33 @@ li {
     position: fixed;
     flex-direction: row;
     width: 100%;
-    height: 70px;
+    height: 80px;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     z-index: 1111;
-}
-
-.navegation::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    transition: .4s;
+    padding-left: 10px;
+    padding-right: 10px;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px);
-    z-index: 0;
 }
 
-.navegation.scroll {}
+.navegation:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.navegation.scroll {
+    height: 60px;
+}
+
+.navegation.scroll:hover {
+    height: 80px;
+}
+
+.navegation.scroll .logo {
+    font-size: 2em;
+}
 
 .navegation.active {
     width: 100%;
@@ -232,7 +241,8 @@ li {
     justify-content: center;
     margin: 15px;
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.2em;
+    transition: .4s;
     font-weight: 500;
 }
 
