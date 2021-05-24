@@ -300,6 +300,7 @@ li {
 
 .content {
     display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -806,6 +807,10 @@ footer {
         height: 65px;
     }
 
+    .navegation.active.scroll {
+        height: 100vh;
+    }
+
     .logo {
         display: flex;
         position: relative;
@@ -815,6 +820,12 @@ footer {
         margin-left: 3%;
         color: #fff;
         font-size: 1.7em;
+    }
+
+    .logo span {
+        margin-bottom: 3.4px;
+        margin-left: -3px;
+        color: #0079D4;
     }
 
     .links-right {
@@ -838,13 +849,13 @@ footer {
         justify-content: center;
         align-items: center;
         margin-left: 0;
-        margin-top: 1em;
+        margin-top: 0;
     }
 
     .info-banner h1 {
         width: 85%;
-        font-size: 2.2em;
-        margin-bottom: 1em;
+        font-size: 2.5em;
+        margin-bottom: 1.5em;
     }
 
     .info-banner h1::before {
@@ -872,5 +883,217 @@ footer {
         width: 190px;
         height: 50px;
         font-size: 1.2em;
+    }
+
+    .infoSections {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12em;
+        margin-left: 3.6em;
+        position: relative;
+        width: 80%;
+        height: auto;
+        align-items: flex-end;
+    }
+
+    .Placas .infoSections {
+        margin-left: 3.6em;
+        align-items: flex-end;
+    }
+
+    .infoSections h3 {
+        display: flex;
+        position: relative;
+        text-align: end;
+        font-size: 3em;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 0.6em;
+        width: 100%;
+    }
+
+    .infoSections h3::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 79.4%;
+        width: 20%;
+        height: 3px;
+        background-color: #0079D4;
+    }
+
+    .infoSections p {
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+        text-align: end;
+        font-size: 1.3em;
+        font-style: italic;
+        color: #fff;
+        margin-bottom: 2em;
+        width: 100%;
+        width: auto;
+    }
+
+    .infoSections a {
+        border-radius: 3px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        background-color: #0079D4;
+        width: 190px;
+        height: 46px;
+        color: #fff;
+        border: 2px solid #0079D4;
+    }
+
+    .infoSections[data-scroll="in"] {
+        transition-duration: .7s;
+        opacity: 1;
+    }
+
+    .infoSections[data-scroll="out"] {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+
+    .marcas {
+        height: auto;
+        padding-bottom: 1.5em;
+    }
+
+    .infoMarcas h4 {
+        text-align: center;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .sliderMarcas {
+        height: 400px;
+        margin-top: 2em;
+    }
+
+    .logosMarcas {
+        width: 180px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .logosMarcas img {
+        height: 35px;
+    }
+
+    .logosMarcas:nth-child(1) {
+        margin: 5px;
+    }
+
+    .logosMarcas:nth-child(2) {
+        margin: 5px;
+    }
+
+    .logosMarcas:nth-child(3) {
+        margin: 5px;
+    }
+
+    .logosMarcas:nth-child(4) {
+        margin: 5px;
+    }
+
+    .logosMarcas:nth-child(5) {
+        margin: 5px;
+    }
+
+    .logosMarcas:nth-child(6) {
+        margin: 5px;
+    }
+
+    .logosMarcas:nth-child(1) img {
+        height: 28px;
+    }
+
+    .logosMarcas:nth-child(2) img {
+        height: 44px;
+    }
+
+    .logosMarcas:nth-child(3) img {
+        height: 56px;
+    }
+
+    .logosMarcas:nth-child(4) img {
+        height: 41px;
+    }
+
+    .logosMarcas:nth-child(5) img {
+        height: 26px;
+    }
+
+    .logosMarcas:nth-child(6) img {
+        height: 43px;
+    }
+
+    footer {
+        flex-direction: column;
+        background-color: #222;
+        height: auto;
+    }
+
+    .linksRedes {
+        width: 100%;
+        height: 100px;
+        margin-top: 4em;
+    }
+
+    .linksRedes p {
+        font-size: 1.4em;
+    }
+
+    .footerRedes li {
+        width: 45px;
+        height: 45px;
+        margin: 15px;
+    }
+
+    .footerRedes li i {
+        font-size: 1.6em;
+    }
+
+    .footerRedes li i:nth-child(1) {
+        font-size: 1.5em;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: 4em;
+        padding-bottom: 5em;
+    }
+
+    .contact p {
+        font-size: 1.4em;
+    }
+
+    .numContact li {
+        margin-bottom: 5px;
+    }
+
+    .numContact li a {
+        font-size: 1.2em;
+    }
+
+    .numContact li span {
+        font-size: 0.85em;
+    }
+
+    .numContact li i {
+        margin-right: 3px;
+    }
+
+    .copyright p {
+        font-size: 0.8em;
     }
 }
