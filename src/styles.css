@@ -574,7 +574,7 @@ footer {
     position: relative;
     width: 50%;
     height: 100px;
-    margin-top: -1em;
+    margin-top: -4em;
 }
 
 .linksRedes p {
@@ -645,7 +645,7 @@ footer {
     position: relative;
     width: 50%;
     height: 100px;
-    margin-top: -1em;
+    margin-top: -4em;
 }
 
 .contact p {
@@ -716,6 +716,163 @@ footer {
 .copyright p {
     font-size: 0.7em;
     color: #fff;
+}
+
+.contentFichas {
+    padding-top: 6em;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: #444;
+    justify-content: center;
+}
+
+.tablaClientes {
+    width: 90%;
+    height: 80px;
+    background-color: #333;
+    border-collapse: collapse;
+}
+
+.tablaClientes tr,
+th {
+    border: 1px solid #fff;
+}
+
+.tablaClientes th {
+    height: 40px;
+}
+
+.tablaClientes th input {
+    height: 80%;
+    width: 90%;
+    color: #000;
+    font-size: 1em;
+}
+
+.tablaClientes button {
+    width: 80px;
+    height: 26px;
+    border-radius: 3px;
+    background-color: #0079D4;
+    border: 2px solid #0079D4;
+    color: #fff;
+}
+
+.tablaClientes button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+}
+
+#btnQuitar {
+    background-color: #f44336;
+    border: 2px solid #f44336;
+}
+
+#btnQuitar:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*------------------------------------------------
+ -------------------- Galerías -------------------
+ -------------------------------------------------*/
+
+.galeriaEnSeco {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    flex-wrap: wrap;
+    background-color: #111;
+}
+
+.galeriaEnSeco a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1111;
+}
+
+.galeriaEnSeco a:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 120, 212, 0.308);
+    z-index: 11;
+    cursor: pointer;
+    animation-duration: 1s;
+}
+
+.contentImages {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    margin-top: 8%;
+    animation-duration: 1s;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6em;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 11;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 25%;
+    z-index: 111;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.eye:hover {
+    cursor: pointer;
+}
+
+.galeriaEnSeco a:hover .eye {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.zoomImage.active {
+    display: block;
+    position: fixed;
+    height: auto;
+    max-width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: scale(2);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.zoomImage.active.active .eye {
+    display: none;
+}
+
+.zoomImage.active:hover::before {
+    background-color: transparent;
+}
+
+.contentImages img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    background-size: cover;
 }
 
 /*-------------------------------------------

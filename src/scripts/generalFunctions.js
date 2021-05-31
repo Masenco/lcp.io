@@ -27,3 +27,28 @@ function closeMenu() {
     const close_logo = document.querySelector('.logo');
    close_logo.classList.remove("active");
 }
+
+function zoom() {
+    const zoom = document.querySelector('.zoomImage');
+    zoom.classList.toggle("active");
+}
+
+function guardarDatos() {
+    var nombreCliente = document.getElementById("nombreCliente").value;
+     var fechaColocacion = document.getElementById("fechaColocacion").value;
+      var metrosPlacas = document.getElementById("metrosPlacas").value;
+       var direccionColocacion = document.getElementById("direccionColocacion").value;
+        var celularCliente = document.getElementById("celularCliente").value;
+         var placas = document.getElementById("listaPlacas").value;
+         var i = 1;
+         var fila = '<tr id="rowPlacas' + i + '"><th>' +nombreCliente+ '</th>'+'<th>'+fechaColocacion+'</th>'+'<th>'+placas+'</th>'+'<th>'+metrosPlacas+'</th>'+'<th>'+direccionColocacion+'</th>'+'<th>'+celularCliente+'</th>'+'<th>'+'<button id="btnQuitar" onclick="quitarDatos(this);">Quitar</button>'+'</th></tr>';
+         var btn = document.createElement("TR");
+         btn.innerHTML=fila;
+         document.getElementById("elementosAgregados").appendChild(btn);
+         i++;
+}
+
+function quitarDatos(btn) {
+   var row = btn.parentNode.parentNode;
+  row.parentNode.removeChild(row);
+}
