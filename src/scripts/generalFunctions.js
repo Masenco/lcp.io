@@ -58,7 +58,7 @@ function calcMetros(btn) {
 var plaquita = btn.value;
 var precio = plaquita*1500;
 var cantidadPlacas = plaquita*7;
-document.getElementById("cantPlacas").innerHTML=" "+cantidadPlacas+" +3 de repuesto";
+document.getElementById("cantPlacas").innerHTML=" "+cantidadPlacas+" +5 de repuesto";
 document.getElementById("precioPlacas").innerHTML=" $"+precio;
 }
 
@@ -66,6 +66,13 @@ function calcMasMetros() {
     var mas = document.getElementById("masDe20").value;
     var precio2 = mas*1500;
     var cantidadPlacas2 = mas*7;
+    if (mas >= 40){
 document.getElementById("cantPlacas").innerHTML=" "+cantidadPlacas2+" +20 de repuesto";
 document.getElementById("precioPlacas").innerHTML=" $"+precio2;
+    }
+else {
+document.getElementById("cantPlacas").innerHTML=" "+cantidadPlacas2+" +15 de repuesto";
+document.getElementById("precioPlacas").innerHTML=" $"+precio2;
+}
+
 }
