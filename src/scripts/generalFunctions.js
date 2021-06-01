@@ -41,14 +41,31 @@ function guardarDatos() {
         var celularCliente = document.getElementById("celularCliente").value;
          var placas = document.getElementById("listaPlacas").value;
          var i = 1;
-         var fila = '<tr id="rowPlacas' + i + '"><th>' +nombreCliente+ '</th>'+'<th>'+fechaColocacion+'</th>'+'<th>'+placas+'</th>'+'<th>'+metrosPlacas+'</th>'+'<th>'+direccionColocacion+'</th>'+'<th>'+celularCliente+'</th>'+'<th>'+'<button id="btnQuitar" onclick="quitarDatos(this);">Quitar</button>'+'</th></tr>';
+         var fila = '<tr id="rowPlacas' + i + '">'+'<th>' +nombreCliente+ '</th>'+'<th>'+fechaColocacion+'</th>'+'<th>'+placas+'</th>'+'<th>'+metrosPlacas+'</th>'+'<th>'+direccionColocacion+'</th>'+'<th>'+celularCliente+'</th>'+'<th>'+'<button id="btnQuitar" onclick="quitarDatos(this);">Quitar</button>'+'</th></tr>';
          var btn = document.createElement("TR");
          btn.innerHTML=fila;
          document.getElementById("elementosAgregados").appendChild(btn);
          i++;
+         document.getElementById("clientes").reset();
 }
 
 function quitarDatos(btn) {
    var row = btn.parentNode.parentNode;
   row.parentNode.removeChild(row);
+}
+
+function calcMetros(btn) {
+var plaquita = btn.value;
+var precio = plaquita*1500;
+var cantidadPlacas = plaquita*7;
+document.getElementById("cantPlacas").innerHTML=" "+cantidadPlacas+" +3 de repuesto";
+document.getElementById("precioPlacas").innerHTML=" $"+precio;
+}
+
+function calcMasMetros() {
+    var mas = document.getElementById("masDe20").value;
+    var precio2 = mas*1500;
+    var cantidadPlacas2 = mas*7;
+document.getElementById("cantPlacas").innerHTML=" "+cantidadPlacas2+" +20 de repuesto";
+document.getElementById("precioPlacas").innerHTML=" $"+precio2;
 }

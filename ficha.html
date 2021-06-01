@@ -28,6 +28,7 @@
         </div>
 
 <div class="contentFichas">
+    <form id="clientes">
     <table class="tablaClientes">
         <tr>
             <th>Nombre</th>
@@ -54,7 +55,57 @@
         </tr>
         <tbody id="elementosAgregados"></tbody>
     </table>
+    </form>
 </div>
+
+
+
+<div class="contentCalculadora">
+    <h3 class="titleCalc">Calculadora</h3>
+<div class="calculadora">
+        <div class="elementosCalc">
+            <p>Metros de placas</p>
+<button type="submit" onclick="calcMetros(this);" value="1">1</button>
+<button type="submit" onclick="calcMetros(this);" value="2">2</button>
+<button type="submit" onclick="calcMetros(this);" value="3">3</button>
+<button type="submit" onclick="calcMetros(this);" value="4">4</button>
+<button type="submit" onclick="calcMetros(this);" value="5">5</button>
+<button type="submit" onclick="calcMetros(this);" value="6">6</button>
+<button type="submit" onclick="calcMetros(this);" value="7">7</button>
+<button type="submit" onclick="calcMetros(this);" value="8">8</button>
+<button type="submit" onclick="calcMetros(this);" value="9">9</button>
+<button type="submit" onclick="calcMetros(this);" value="10">10</button>
+<button type="submit" onclick="calcMetros(this);" value="11">11</button>
+<button type="submit" onclick="calcMetros(this);" value="12">12</button>
+<button type="submit" onclick="calcMetros(this);" value="13">13</button>
+<button type="submit" onclick="calcMetros(this);" value="14">14</button>
+<button type="submit" onclick="calcMetros(this);" value="15">15</button>
+<button type="submit" onclick="calcMetros(this);" value="16">16</button>
+<button type="submit" onclick="calcMetros(this);" value="17">17</button>
+<button type="submit" onclick="calcMetros(this);" value="18">18</button>
+<button type="submit" onclick="calcMetros(this);" value="19">19</button>
+<button type="submit" onclick="calcMetros(this);" value="20">20</button>
+<p class="oNum">Otro número:</p>
+<input value="" type="number" min="1" max="100" id="masDe20">
+<button type="submit" onclick="calcMasMetros();">Calcular</button>
+</div>
+<div class="tablaCalc">
+<div class="calcPlacas">
+    <div class="cantP">
+<p>Cantidad de placas: </p>
+<p><span id="cantPlacas"></span></p>
+    </div>
+    <div class="cantP">
+<p>Precio:</p>
+<p><span id="precioPlacas"></span></p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
 
 
 <footer>
