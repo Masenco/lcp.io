@@ -1035,7 +1035,86 @@ th {
         margin-left: 20px;
         font-size: 0.9em;
     }
+
+    .contentCalculadora {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        background-color: #555;
+        align-items: center;
+        padding-bottom: 5em;
+    }
+
+    .contentCalculadora h3 {
+        font-size: 2.5em;
+    }
+
+    .calculadora {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        margin-top: 3em;
+    }
+
+    .elementosCalc {
+        width: 60%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .elementosCalc button {
+        width: 43px;
+        height: 43px;
+    }
+
+    .elementosCalc p {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .elementosCalc button:nth-child(24) {
+        height: 35px;
+        width: 100%;
+    }
+
+    .elementosCalc button:hover {
+        cursor: pointer;
+        background-color: #666;
+    }
+
+    .elementosCalc p {
+        color: #fff;
+        margin: 2px;
+    }
+
+    .elementosCalc .oNum {
+        font-size: 0.9em;
+    }
+
+    .tablaCalc {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    .tablaCalc p {
+        font-size: 1.3em;
+        margin-bottom: 0.1em;
+    }
 }
+
+
 
 @media screen and (max-width: 650px) {
     .info-banner {
@@ -1367,5 +1446,56 @@ th {
 
     .copyright p {
         font-size: 0.8em;
+    }
+
+    .contentCalculadora h3 {
+        width: 100%;
+        font-size: 2.5em;
+        margin-top: 0.6em;
+    }
+
+    .calculadora {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .elementosCalc {
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .elementosCalc button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .elementosCalc p {
+        font-size: 1.5em;
+    }
+
+    .elementosCalc button:nth-child(24) {
+        height: 36px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .elementosCalc .oNum {
+        font-size: 1em;
+    }
+
+    .tablaCalc {
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tablaCalc p {
+        font-size: 1.3em;
+        margin-bottom: 0.2em;
     }
 }
