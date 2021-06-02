@@ -28,11 +28,6 @@ function closeMenu() {
    close_logo.classList.remove("active");
 }
 
-function zoom() {
-    const zoom = document.querySelector('.zoomImage');
-    zoom.classList.toggle("active");
-}
-
 function guardarDatos() {
     var nombreCliente = document.getElementById("nombreCliente").value;
      var fechaColocacion = document.getElementById("fechaColocacion").value;
