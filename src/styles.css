@@ -10,7 +10,7 @@ html {
 }
 
 section {
-    background-color: #222;
+    background-color: #20232D;
     overflow: hidden;
 }
 
@@ -95,8 +95,9 @@ li {
     position: relative;
     width: 100%;
     height: auto;
-    font-size: 2.5em;
-    font-weight: 400;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: bold;
     color: #fff;
     margin-bottom: 1.5em;
 }
@@ -105,7 +106,7 @@ li {
     position: absolute;
     content: "";
     bottom: -10px;
-    left: 0;
+    left: 6px;
     width: 80px;
     height: 4px;
     background-color: #0079D4;
@@ -139,9 +140,10 @@ li {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: bold;
     border-radius: 3px;
+    text-transform: uppercase;
 }
 
 .info-banner .servicios {
@@ -172,7 +174,7 @@ li {
     position: fixed;
     flex-direction: row;
     width: 100%;
-    height: 80px;
+    height: 70px;
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -180,7 +182,7 @@ li {
     transition: .4s;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     font-family: 'Roboto',
         sans-serif;
@@ -304,6 +306,7 @@ li {
     position: relative;
     width: 100%;
     height: 100vh;
+    background-color: #20232D;
 }
 
 .content img {
@@ -335,10 +338,11 @@ li {
 .infoSections h3 {
     display: flex;
     position: relative;
-    font-size: 3em;
-    font-weight: 400;
+    font-size: 2.2em;
+    font-weight: bold;
     color: #fff;
     margin-bottom: 0.6em;
+    text-transform: uppercase;
 }
 
 .infoSections h3::before {
@@ -367,12 +371,14 @@ li {
     position: relative;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1em;
     background-color: #0079D4;
     width: 190px;
     height: 46px;
     color: #fff;
     border: 2px solid #0079D4;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .infoSections a:hover {
@@ -565,7 +571,7 @@ footer {
     flex-direction: row;
     width: 100%;
     height: 260px;
-    background-color: #222;
+    background-color: #0B0C0F;
 }
 
 .linksRedes {
@@ -704,7 +710,7 @@ footer {
 .copyright {
     display: flex;
     position: absolute;
-    background-color: #111;
+    background-color: #20232D;
     align-items: center;
     flex-direction: row;
     width: 100%;
@@ -724,7 +730,7 @@ footer {
     display: flex;
     width: 100%;
     height: 400px;
-    background-color: #444;
+    background-color: #20232D;
     justify-content: center;
 }
 
@@ -783,7 +789,7 @@ th {
     width: 100%;
     height: auto;
     justify-content: center;
-    background-color: #555;
+    background-color: #20232D;
     align-items: center;
     padding-bottom: 5em;
 }
@@ -899,11 +905,78 @@ th {
     display: flex;
     position: relative;
     width: 100%;
-    height: 600px;
-    background-color: #555;
+    height: auto;
+    background-color: #20232D;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 10%;
+}
+
+.infoPlacas {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 4.6em;
+    margin-bottom: 5em;
+}
+
+.infoPlacas p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.infoPlacas p::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #0079D4;
+}
+
+.linksPlacas {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 4.6em;
+    transition-duration: 2s;
+}
+
+.linksPlacas p {
+    font-size: 1.6em;
+    color: #BFBFBF;
+}
+
+.linksPlacas a {
+    font-size: 1.3em;
+    margin-left: 15px;
+    color: #BFBFBF;
+    font-style: oblique;
+}
+
+.linksPlacas a::before {
+    content: "";
+    width: 13px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background-color: #0079D4;
+    transition-duration: .4s;
+}
+
+.linksPlacas a:hover::before {
+    width: 45px;
 }
 
 .contentImageP {
@@ -911,18 +984,8 @@ th {
     position: relative;
     width: 380px;
     height: 260px;
-    position: relative;
     margin: 15px;
-    background-color: red;
-}
-
-.contentImageP a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 11;
+    background-color: transparent;
 }
 
 .contentImageP img {
@@ -933,6 +996,26 @@ th {
     left: 0;
     background-size: contain;
     object-fit: cover;
+}
+
+.contentImageP:hover {
+    cursor: pointer;
+}
+
+.contentImageP:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 120, 212, 0.308);
+    z-index: 1;
+}
+
+.contentImageP:hover .eye {
+    opacity: 1;
+    margin-top: 3%;
 }
 
 .bcg {
@@ -953,7 +1036,7 @@ th {
 
 .contentImageP.active {
     width: 70%;
-    height: 80%;
+    height: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -961,6 +1044,30 @@ th {
     z-index: 111111;
 }
 
+.contentImageP.active:hover::before {
+    display: none;
+}
+
+.cerrarImagenA {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    font-family: sans-serif;
+    z-index: 1111111111;
+    display: none;
+}
+
+.cerrarImagenA:hover {
+    filter: opacity(0.4);
+}
+
+.contentImageP.active .cerrarImagenA {
+    display: block;
+}
 
 
 

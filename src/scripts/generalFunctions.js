@@ -16,11 +16,11 @@ function closeMenu() {
     const closeToggle = document.querySelector('.toggle');
     closeToggle.classList.remove("active");
 
-     const closeMenu = document.querySelector('.navegation')
+     const closeMenu = document.querySelector('.navegation');
     closeMenu.classList.remove("active");
 
 
-    const closeLinksRight = document.querySelector('.links-right')
+    const closeLinksRight = document.querySelector('.links-right');
     closeLinksRight.classList.remove("active");
 
 
@@ -69,5 +69,14 @@ else {
 document.getElementById("cantPlacas").innerHTML=" "+cantidadPlacas2+" +15 de repuesto";
 document.getElementById("precioPlacas").innerHTML=" $"+precio2;
 }
+}
 
+function deleteClass() {
+    const deleteC = document.querySelector('.contentImageP');
+   deleteC.classList.remove("active");
+
+   const deleteB = document.querySelector('.bcg');
+   deleteB.classList.remove("active");
+
+   alert('Evento click sobre un input text con id="nombre2"');
 }

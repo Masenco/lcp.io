@@ -29,15 +29,63 @@
                 <a onclick="openMenu();" class="toggle"><i class="fas fa-bars"></i></a>
         </div>
 
+
+
+
+
         <div class="galeriaPlacas">
+            <div class="infoPlacas">
+                <p>Decile adiós a la humedad en tus paredes, pero con estilo</p>
+            </div>
+            <div class="linksPlacas">
+                <p>Nuestras 3 variedades:</p>
+                <a href="">Marmol</a>
+                <a href="">Travertino</a>
+                <a href="">Serranas</a>
+            </div>
             <div class="bcg"></div>
                 <div class="contentImageP">
+                    <a class="cerrarImagenA">X</a>
+                    <div class="eye"><i class="fas fa-eye"></i></div>
                     <img class="imageP" src="src/images/bannerImgP.jpg" alt="">
+                    
                 </div>
-                <div class="contentImageP">
+                 <div class="contentImageP">
+                    <a class="cerrarImagenA">X</a>
+                    <div class="eye"><i class="fas fa-eye"></i></div>
                     <img class="imageP" src="src/images/contentP.jpg" alt="">
+                    
                 </div>
-                
+                 <div class="contentImageP">
+                    <a class="cerrarImagenA">X</a>
+                    <div class="eye"><i class="fas fa-eye"></i></div>
+                    <img class="imageP" src="src/images/bannerImgP.jpg" alt="">
+                    
+                </div>   
+                 <div class="contentImageP">
+                    <a class="cerrarImagenA">X</a>
+                    <div class="eye"><i class="fas fa-eye"></i></div>
+                    <img class="imageP" src="src/images/bannerImgP.jpg" alt="">
+                    
+                </div>
+                 <div class="contentImageP">
+                    <a class="cerrarImagenA">X</a>
+                    <div class="eye"><i class="fas fa-eye"></i></div>
+                    <img class="imageP" src="src/images/bannerImgP.jpg" alt="">
+                    
+                </div>
+                 <div class="contentImageP">
+                    <a class="cerrarImagenA">X</a>
+                    <div class="eye"><i class="fas fa-eye"></i></div>
+                    <img class="imageP" src="src/images/bannerImgP.jpg" alt="">
+                    
+                </div>
+                 <div class="contentImageP">
+                    <a class="cerrarImagenA">X</a>
+                    <div class="eye"><i class="fas fa-eye"></i></div>
+                    <img class="imageP" src="src/images/bannerImgP.jpg" alt="">
+                    
+                </div>
         </div>
 
 
@@ -72,11 +120,20 @@
 crossorigin="anonymous"></script>
 
 <script>
-    $('.contentImageP').click(function(){
+    $('.contentImageP').on('click', function() {
     $(this).addClass( "active" );
     $('.bcg').addClass( "active" );
-    })
+    $('.eye').css({
+        'opacity' : '0'});
+        $('html, body').animate({
+            scrollTop: $(".contentImageP").offset().top + -180}, 200);
+    });
 
+    $(".cerrarImagenA").on('click', function(e) {
+     $(".contentImageP").removeClass("active");
+     $(".bcg").removeClass("active");
+     e.stopPropagation();
+    });
 </script>
 
 <script type="text/javascript">
