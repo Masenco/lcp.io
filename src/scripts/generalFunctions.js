@@ -80,3 +80,11 @@ function deleteClass() {
 
    alert('Evento click sobre un input text con id="nombre2"');
 }
+
+function disableScroll() {
+    document.body.style.overflow="hidden";  
+}
+
+function enableScroll() {
+    document.body.style.overflow="initial";
+}
