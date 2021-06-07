@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">    
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css">
+<link rel="stylesheet" href="src/placas.styles.css">
     <script src="src/scripts/generalFunctions.js"></script>
     <title>LCP S.A - Construcción en seco, placas antihumedad, muebles a medida</title>
 </head>
@@ -21,10 +21,10 @@
                 <ul class="links-right">
                     <li><a href="index.html" onclick="closeMenu();">Inicio</a></li>
                     <li><a href="enseco.html" onclick="closeMenu();">Construcción en seco</a></li>
-                    <li><a href="#placas" onclick="closeMenu();">Placas antihumedad</a></li>
-                    <li><a href="#muebles" onclick="closeMenu();">Muebles</a></li>
-                    <li><a href="#ficha" onclick="closeMenu();">Ficha</a></li>
-                    <li><a href="#calculadora" onclick="closeMenu();">Calculadora</a></li>
+                    <li><a href="placas.html" onclick="closeMenu();">Placas antihumedad</a></li>
+                    <li><a href="" onclick="closeMenu();">Muebles</a></li>
+                   <!--<li><a href="#ficha" onclick="closeMenu();">Ficha</a></li>-->  
+                   <!--<li><a href="#calculadora" onclick="closeMenu();">Calculadora</a></li>-->
                 </ul>
                 <a onclick="openMenu();" class="toggle"><i class="fas fa-bars"></i></a>
         </div>
@@ -35,7 +35,7 @@
 
         <div class="galeriaPlacas">
             <div class="infoPlacas">
-                <p>Decile adiós a la humedad en tus paredes, pero con estilo</p>
+                <p>Decile adiós a la humedad en tus paredes</p>
             </div>
             <div class="linksPlacas">
                 <p>Nuestras 3 variedades:</p>
@@ -149,17 +149,21 @@
    ------------------------------------------->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
 crossorigin="anonymous"></script>
-
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+   
+</script>
 <script>
     $('.contentImageP').on('click', function() {
     $(this).addClass( "active" );
     $('.bcg').addClass( "active" );
     $('.eye').css({
         'opacity' : '0', 'transition-duration' : '0'});
-    });
-
+  });
     $(".cerrarImagenA").on('click', function(e) {
      $(".contentImageP").removeClass("active");
+      $('.contentImageP').removeClass(" landscape ");
      $(".bcg").removeClass("active");
      $('.eye').css({
         'opacity' : ''});
@@ -196,5 +200,13 @@ $('html, body').animate({
         targets: 'h1, h2, h3, h4, p, a, img, section, .infoSections, .Placas'
     });
     </script>
+    <!--<script>
+        window.onresize = function(){
+         anchoVentana = window.innerWidth;
+         var cambiarWidth = document.getElementsByClassName(".");
+          if(anchoVentana < 600) {
+           alert(anchoVentana);
+}};
+    </script>--> 
 </body>
 </html>

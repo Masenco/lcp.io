@@ -10,6 +10,10 @@ const toggle_menu = document.querySelector('.toggle')
 
     const deleteLogo = document.querySelector('.logo');
     deleteLogo.classList.toggle("active");
+
+    const modificarToggle = document.querySelector('.fa-bars');
+    modificarToggle.classList.remove("fa-bar");
+    modificarToggle.classList.toggle("fa-times");
 }
 
 function closeMenu() {
@@ -88,3 +92,5 @@ function disableScroll() {
 function enableScroll() {
     document.body.style.overflow="initial";
 }
+
+

@@ -182,7 +182,7 @@ li {
     transition: .4s;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(20px);
     font-family: 'Roboto',
         sans-serif;
@@ -239,6 +239,10 @@ li {
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+
+.fa-times {
+    font-size: 1.2em;
 }
 
 .logo.active {
@@ -1401,7 +1405,7 @@ th {
         height: auto;
         justify-content: center;
         margin: 15px;
-        margin-left: 3%;
+        margin-left: 1%;
         color: #fff;
         font-size: 1.7em;
     }
@@ -1438,7 +1442,7 @@ th {
 
     .info-banner h1 {
         width: 85%;
-        font-size: 2.5em;
+        font-size: 2em;
         margin-bottom: 1.5em;
     }
 
@@ -1466,71 +1470,41 @@ th {
         position: relative;
         width: 190px;
         height: 50px;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .infoSections {
-        display: flex;
-        flex-direction: column;
-        margin-top: 12em;
-        margin-left: 3.6em;
-        position: relative;
-        width: 80%;
+        margin-left: 2em;
+        width: 70%;
         height: auto;
-        align-items: flex-end;
+        margin-top: 17em;
     }
 
     .Placas .infoSections {
-        margin-left: 3.6em;
+        margin-left: 6em;
+        text-align: end;
         align-items: flex-end;
     }
 
     .infoSections h3 {
-        display: flex;
-        position: relative;
-        text-align: end;
-        font-size: 3em;
-        font-weight: 400;
-        color: #fff;
+        font-size: 2.2em;
         margin-bottom: 0.6em;
-        width: 100%;
     }
 
-    .infoSections h3::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 79.4%;
-        width: 20%;
-        height: 3px;
-        background-color: #0079D4;
+    .Placas .infoSections h3::before {
+        left: 82%;
     }
 
     .infoSections p {
-        display: flex;
-        position: relative;
-        align-items: flex-end;
-        text-align: end;
         font-size: 1.3em;
-        font-style: italic;
-        color: #fff;
         margin-bottom: 2em;
-        width: 100%;
-        width: auto;
     }
 
     .infoSections a {
         border-radius: 3px;
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2em;
-        background-color: #0079D4;
+        font-size: 1em;
         width: 190px;
         height: 46px;
-        color: #fff;
-        border: 2px solid #0079D4;
     }
 
     .infoSections[data-scroll="in"] {
@@ -1540,7 +1514,17 @@ th {
 
     .infoSections[data-scroll="out"] {
         opacity: 0;
-        transform: translateX(30%);
+        transform: translateX(-50%);
+    }
+
+    .Placas .infoSections[data-scroll="in"] {
+        transition-duration: .7s;
+        opacity: 1;
+    }
+
+    .Placas .infoSections[data-scroll="out"] {
+        opacity: 0;
+        transform: translateX(50%);
     }
 
     .marcas {
@@ -1730,5 +1714,92 @@ th {
     .tablaCalc p {
         font-size: 1.3em;
         margin-bottom: 0.2em;
+    }
+
+    .infoPlacas {
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 1em;
+        margin-top: 6em;
+    }
+
+    .infoPlacas p {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    .infoPlacas p::before {
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .section {
+        width: 100%;
+        padding-top: 8%;
+        margin-left: 0;
+    }
+
+    .titModel p {
+        font-size: 1.3em;
+    }
+
+    .linksPlacas {
+        position: relative;
+        width: 100%;
+        height: 160px;
+        padding-top: 0;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #181A21;
+        text-align: center;
+    }
+
+    .linksPlacas p {
+        font-size: 1.2em;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .linksPlacas p::before {
+        display: none;
+    }
+
+    .linksPlacas a {
+        font-size: 1.2em;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .contentImageP:hover::before {
+        display: none;
+    }
+
+    .contentImageP:hover .eye {
+        opacity: 0;
+        display: none;
+    }
+
+    .contentImageP.active {
+        width: 95%;
+        height: 50%;
+        top: 50%;
+        left: 47.5%;
+    }
+
+    .contentImageP.active:hover::before {
+        display: none;
+    }
+
+    .cerrarImagenA {
+        top: 2%;
+        right: 4%;
+        font-size: 2.7em;
     }
 }
