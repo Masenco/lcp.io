@@ -41,7 +41,7 @@
                 <p>Nuestras 3 variedades:</p>
                 <a class="toTravertino">> Travertino</a>
                 <a class="toMarmol">> Marmol</a>
-                <a href="">> Marmol 2.0</a>
+                <a class="toMarmol2">> Marmol 2.0</a>
             </div>
             <section class="section Travertino">
                 <div class="titModel"><p>Travertino</p></div>
@@ -117,6 +117,22 @@
                     
                 </div>
                 </section>
+
+                <section class="section Marmol2">
+                    <div class="titModel"><p>Marmol 2.0</p></div>
+                <div class="contentImageP" onclick="disableScroll();">
+                    <a class="cerrarImagenA" onclick="enableScroll();">X</a>
+                    <div class="eye"><p>Marmol 2.0</p><i class="fas fa-eye"></i></div>
+                    <img class="imageP" src="src/images/marmol2.0.jpg" alt="">
+                    
+                </div>
+                 <div class="contentImageP" onclick="disableScroll();">
+                    <a class="cerrarImagenA" onclick="enableScroll();">X</a>
+                    <div class="eye"><p>Marmol 2.0</p><i class="fas fa-eye"></i></div>
+                    <img class="imageP" src="src/images/marmol2.01.jpg" alt="">
+                    
+                </div>
+                </section>
                 </div>
 
 
@@ -147,6 +163,7 @@
 
 <!--------------- Scripts ----------------
    ------------------------------------------->
+   <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(183597)</script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
 crossorigin="anonymous"></script>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -180,9 +197,9 @@ $('html, body').animate({
             scrollTop: $(".Marmol").offset().top + -40}, 200);
     });
 
-    $('.toMarmol2.0').on('click', function() {
+    $('.toMarmol2').on('click', function() {
 $('html, body').animate({
-            scrollTop: $(".Marmol2.0").offset().top + -40}, 200);
+            scrollTop: $(".Marmol2").offset().top + -40}, 200);
     });
 </script>
 
